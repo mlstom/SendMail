@@ -7,7 +7,7 @@ export default function Home() {
   const [mail, setmail] = useState('')
   const handle = async(e)=>{
     e.preventDefault()
-    await fetch('http://localhost:3000/api/sendmail', {
+    await fetch('https://send-mail-tau.vercel.app/api/sendmail', {
       method: 'POST', 
       headers: {
         'Content-Type': 'application/json'
