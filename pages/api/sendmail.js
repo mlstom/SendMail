@@ -12,7 +12,7 @@ export default async function sendMail(req, res) {
       });
     
       let info = await transporter.sendMail({
-        from: 'milos@inkrist.net',
+        from: 'milos502@gmail.com',
         to: req.body.email, 
         subject: "Hello ✔",
         text: "Hello world?",
